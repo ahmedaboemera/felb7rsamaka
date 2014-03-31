@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Help</class>
+ <widget class="QMainWindow" name="Help">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>301</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Freestyle Script</family>
+      <pointsize>25</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Welcome to F el Ba7r Samaka Application</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>781</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rules:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1- a Fish dies if one of the neighbouring cells contains a shark.</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>70</y>
+      <width>371</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2- a Fish is changed to a shark if 2 of its neighbouring cells contains sharks</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>102</y>
+      <width>381</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3- a shark dies if it hasn't eaten for a time interval equal to ocean starve time</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>130</y>
+      <width>461</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4- a shark can eat a maximum of 8 fish in each time step iff they are all in it's neighbouring cells</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>162</y>
+      <width>591</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5- an empty cell is changed into a fish if at least two of its neighbous are fish and at most one of its neighbours is a shark</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>192</y>
+      <width>671</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>6- an empty cell is changed to a shark if at least two of its neighbours are fish and at least two of its neighbours are sharks</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>222</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>methods of input:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>252</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Random play :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>282</y>
+      <width>731</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>all you need is to input length and width and starve time and the ocean will be generated randomly</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>312</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>real play :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>342</y>
+      <width>711</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>you will input width , length, and starve time and then you will define the positions of fish and sharks in the ocean</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>373</y>
+      <width>791</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>hint: you can show RunLengthEncoding at any time step and also you can choose to make the fish go smarter by escaping from sharks to maximize number of Fish</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>430</y>
+      <width>401</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>French Script MT</family>
+      <pointsize>40</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Back To Main Menu</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/new/prefix1/images1.jpg);</string>
+    </property>
+   </widget>
+   <zorder>graphicsView</zorder>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>label_11</zorder>
+   <zorder>label_12</zorder>
+   <zorder>label_13</zorder>
+   <zorder>label_14</zorder>
+   <zorder>pushButton</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
